@@ -56,7 +56,7 @@ function keyReleased() {
 		PadL.isMoving = false;
 	}
 }
-
+/*
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
 		PadL.isMoving= true;
@@ -66,6 +66,7 @@ function keyPressed() {
 		PadL.dir = 1;
 	}
 }
+*/
 
 function ScoreDisplay() {
 	console.log(LScore);
