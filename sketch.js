@@ -35,7 +35,7 @@ function draw() {
 
 	//bot
 	//comment out PadL.bot if you want to play...
-	//PadL.botL();
+	PadL.botL();
 	//Do not Comment Out PadR.Bot
 	PadR.botR();
 
