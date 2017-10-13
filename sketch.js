@@ -15,7 +15,7 @@ function setup() {
 
 	frameRate(60);
 	rectMode(CENTER);
-	createCanvas(window.innerWidth - 10, window.innerHeight - 10);
+	createCanvas(window.innerWidth - 5, window.innerHeight - 5);
 	PadL = new Paddle(20, height/2);
 	PadR = new Paddle(width - 20, height/2);
 	ball = new Ball(width/2, height/2, 20);
@@ -34,9 +34,9 @@ function draw() {
 	PadR.edges();
 
 	//bot
-	//comment out PadL.bot if you want to play...
-	PadL.botL();
-	//Do not Comment Out PadR.Bot
+		//comment out PadL.bot if you want to play...
+	//PadL.botL();
+		//Do not Comment Out PadR.Bot
 	PadR.botR();
 
 	//ball
@@ -56,7 +56,7 @@ function keyReleased() {
 		PadL.isMoving = false;
 	}
 }
-/*
+
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
 		PadL.isMoving= true;
@@ -66,7 +66,6 @@ function keyPressed() {
 		PadL.dir = 1;
 	}
 }
-*/
 
 function ScoreDisplay() {
 	console.log(LScore);
